@@ -1,0 +1,136 @@
+body {
+  	--background:#0A0A0A;
+
+	--card-bg: #1A1A1A;
+	--primary: #D4AF37; /* Premium Gold */
+	--primary-hover: #B5952F;
+	--text-main: #FDFDFD;
+	--text-muted: #9E9E9E;
+	--border-color: #333333;
+
+	--gradient:rgba(255, 255, 255,0.2);
+	--gradient-light:rgba(255, 255, 255,0.1);
+	--gradient-dark:rgba(255, 255, 255,0.3);
+
+	--color:#ddd;
+	--color-oppo: #222;
+}
+
+.trueApp {
+	position: absolute;
+	top: 75px;
+	background: var(--background);
+	color: var(--color);
+
+	width: 100%;
+	min-height: calc(100vh - 75px);
+	height: fit-content;
+	overflow: hidden;
+
+	display:flex;
+	flex-direction:column; 
+    justify-content:space-between;
+}
+
+.App {
+  display: flex;
+}
+
+#errorDiv {
+	width:100vw;
+	height:75vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+
+/* --- Events Page Specific Styles --- */
+.events-hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.events-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.events-hero p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+/* Filter buttons or section headers */
+.events-filter-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 40px 0 20px 0;
+  border-left: 4px solid var(--primary);
+  padding-left: 12px;
+  color: #fff;
+}
+
+/* --- Enhanced Card & Grid Styles --- */
+
+.events .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px; /* Controls space between cards */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.events .card {
+  /* Rich background layering using a gradient over the card background */
+  background: linear-gradient(145deg, #161616, #0e0e0e);
+  
+  /* Rich border with subtle glow/highlight effect */
+  border: 1px solid rgba(0, 229, 255, 0.15);
+  border-radius: 12px;
+  
+  /* Internal spacing (padding) */
+  padding: 0px; /* Image will span edge-to-edge, content padding handled separately */
+  
+  /* External spacing (margin) handled via grid gap, but you can add margin if stacked */
+  margin-bottom: 10px;
+  
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.events .card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary); /* Glows with the electric cyan accent on hover */
+}
+
+/* Specific padding container for card body contents */
+.events .card-content {
+  padding: 24px; /* Rich padding for internal readability */
+}
+
+.events .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+/* Enhancing mission/feature boxes similarly */
+.feature-card, .mission-box, .team-card {
+  background: linear-gradient(145deg, #141414, #0b0b0b);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 30px; /* Rich padding */
+  margin-bottom: 15px; /* Margin separation */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  transition: border-color 0.2s ease;
+}
+
+.feature-card:hover, .mission-box:hover, .team-card:hover {
+  border-color: var(--primary);
+}

@@ -1,0 +1,123 @@
+/* --- About Page Specific Styles --- */
+/* --- Updated About Hero Section with Background Image & Gradient --- */
+.about-hero {
+  text-align: center;
+  padding: 120px 20px;
+  margin-bottom: 50px;
+  border-radius: 12px;
+  
+  /* Layering a dark semi-transparent gradient on top of an Unsplash financial/trading background image */
+  background: linear-gradient(
+      rgba(5, 5, 5, 0.15), 
+      rgba(5, 5, 5, 0.50)
+    ), 
+    url('https://bphc-traders-app-server.onrender.com/about.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.about-hero p {
+  color: var(--text-muted);
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+}
+
+.about-section {
+  margin-bottom: 60px;
+}
+
+.about-section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 25px;
+  font-weight: 700;
+  border-left: 4px solid var(--primary);
+  padding-left: 12px;
+}
+
+/* Mission / Vision Split */
+.mission-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.mission-box {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.mission-box h3 {
+  color: var(--primary);
+  margin-bottom: 12px;
+  font-size: 1.25rem;
+}
+
+/* Teams Grid */
+.teams-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.team-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 25px;
+  text-align: center;
+}
+
+.team-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.team-card p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* Contact & Socials Container */
+.contact-container {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.contact-info p {
+  color: var(--text-muted);
+  margin-bottom: 15px;
+}
+
+.contact-links-list {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.contact-links-list li {
+  margin-bottom: 10px;
+}
+
+.contact-links-list a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.contact-links-list a:hover {
+  text-decoration: underline;
+}
