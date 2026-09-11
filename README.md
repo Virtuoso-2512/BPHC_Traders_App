@@ -1,7 +1,7 @@
 # BHCG-Traders App | Inductions
 A simple, modern, full-stackweb application built with React, Node.js, Express, and MongoDB, featuring a sleek dark-themed UI.
 
-The Code for server is at [https://github.com/Virtuoso-2512/BPHC_Traders_App_Server](Server GitHub Repo) .
+The Code for server is at [https://github.com/Virtuoso-2512/BPHC_Traders_App_Server] (Server GitHub Repo) .
 
 ---
 
